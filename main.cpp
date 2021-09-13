@@ -29,7 +29,7 @@ bool IsConsoleVisible()
 }
 int main(int argc, char **argv)
 {
-   // printf("Simple ManualMap/LoadLibrary injector by PolandCheater\n\nPlease choose method of injection - press Enter for ManualMap or anything else for LoadLibrary\n");
+ 
     HideConsole();
     string InjectionMethodTemp;
 
@@ -44,8 +44,7 @@ int main(int argc, char **argv)
 
 	if (argc == 1)
 	{
-		//printf("Please input dll you want to inject (press Enter for memehook.dll)\n");
-		//getline(cin, dllname);
+		
 	}
 	else if (argc == 2) dllname = argv[1];
     if (dllname.empty()) dllname = "loadbin.dll";
